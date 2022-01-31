@@ -5,9 +5,8 @@ services:
     image: mysql:5.7
     container_name: mysql-container-local
     volumes:
-      - /apps/mysql/mydir:/mydir
-      - /apps/mysql/datadir:/var/lib/mysql
-      - /apps/mysql/conf/my.cnf:/etc/my.cnf
+      - ../data/mysql/datadir:/var/lib/mysql
+      - ../data/mysql/conf/my.cnf:/etc/my.cnf
     environment:
       - "MYSQL_ROOT_PASSWORD=123456"
       - "TZ=Asia/Shanghai"

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mysql:
+    restart: always
+    image: redis
+    container_name: redis-container-local
+    ports:
+      - 6379:6379
